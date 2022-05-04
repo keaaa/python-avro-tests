@@ -1,0 +1,11 @@
+{
+    "doc": "Data that is tied to a concrete feature via its featureId.",
+    "name": "FeatureData",
+    "namespace": "fiberoptics.feature.message.v1",
+    "type": "record",
+    "fields": [
+        {"name": "data", "type": {"type":"array", "items": "float"}},
+        {"name": "measurementStartTime", "type": "long", "logicaltype": "timestamp-nanos"},
+        {"name": "featureId", "type": "string"}
+    ]
+ }
