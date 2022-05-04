@@ -27,7 +27,7 @@ def write_avro_file_with_schema():
     writer.append(get_json())
     writer.close()
     file_size = os.path.getsize(avro_path)
-    print("File Size is :", file_size, "bytes")
+    print(f"With schema: : {file_size} bytes")
 
 
 def read_avro_byte_no_schema(raw_bytes):
@@ -44,7 +44,7 @@ def get_json():
 
 
 bytes = write_avro_file_no_schema()
-print(f"byte length: {len(bytes)}")
+print(f"No schema: {len(bytes)} bytes")
 
 # read_avro_byte_no_schema(bytes)
 
