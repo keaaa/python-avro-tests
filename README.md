@@ -16,6 +16,6 @@ features
 | mv-expand data;
 ```
 
-The mv-expand does not manage to expand the dynamic array, as it contains a NaN value. 
+The mv-expand does not manage to expand the dynamic array, containing a NaN value. 
 
 If running the same ingest but with no NaN value, the mv-expand works as expected. 
